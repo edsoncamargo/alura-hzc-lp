@@ -1,0 +1,220 @@
+.card {
+  width: 100%;
+
+  background-color: #2c343a;
+  border-radius: 16px;
+
+  overflow: hidden;
+
+  &.card--highlight {
+    align-self: flex-start;
+
+    @media screen and (max-width: 1000px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &.card--recent {
+    @media screen and (max-width: 1000px) {
+      display: none;
+    }
+
+    width: 256px;
+    align-self: flex-start;
+
+    .card__content {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 16px;
+      align-items: center;
+
+      padding-bottom: 56px;
+
+      .card__text-title {
+        grid-column: span 1;
+      }
+
+      .card__link {
+        grid-column: span 2;
+
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16px;
+        color: #0480dc;
+
+        cursor: pointer;
+      }
+
+      .card__list {
+        display: grid;
+        row-gap: 16px;
+        grid-column: span 3;
+
+        .card__list__item {
+          display: grid;
+          grid-template-columns: auto 1fr;
+          column-gap: 16px;
+        }
+
+        img {
+          width: 32px;
+          height: 32px;
+
+          border-top-left-radius: 16px;
+          border-top-right-radius: 16px;
+
+          grid-column: span 1;
+          grid-row: span 2;
+        }
+
+        .card__list__title {
+          grid-column: span 1;
+
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 24px;
+          color: #ffffff;
+        }
+
+        .card__list__profile {
+          grid-column: span 1;
+
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 24px;
+          color: #95999c;
+        }
+      }
+    }
+  }
+
+  .card__image {
+    @media screen and (min-width: 1000px) {
+      &.card__image--mobile {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 1000px) {
+      &.card__image--desktop {
+        display: none;
+      }
+    }
+  }
+
+  .card__content {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    row-gap: 8px;
+    column-gap: 24px;
+
+    padding: 16px;
+
+    .card__text-highlight {
+      grid-column: span 2;
+
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 32px;
+      color: #ffffff;
+    }
+
+    .card__text-title {
+      grid-column: span 2;
+
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 24px;
+      color: #ffffff;
+    }
+
+    .card__text-profile {
+      grid-column: span 2;
+
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #95999c;
+    }
+
+    .card__text-info {
+      grid-column: span 1;
+      align-self: center;
+
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #95999c;
+
+      &.card__text-info--time {
+        &::before {
+          content: "\e90c";
+          margin-right: 8px;
+        }
+      }
+
+      &.card__text-info--views {
+        &::before {
+          content: "\e90f";
+          margin-right: 8px;
+        }
+      }
+
+      &.card__text-info--money {
+        &::before {
+          content: "\e905";
+          margin-right: 8px;
+        }
+      }
+    }
+
+    .card__button {
+      display: flex;
+      align-items: center;
+      justify-self: flex-end;
+      justify-content: center;
+
+      height: 40px;
+      width: 40px;
+
+      background: #0480dc;
+
+      padding: 12px;
+      border-radius: 8px;
+
+      box-sizing: border-box;
+
+      cursor: pointer;
+
+      &.card__button--highlight {
+        width: 100%;
+        grid-column: span 2;
+
+        &.card__button--play {
+          &::before {
+            margin-top: 3px;
+            margin-right: 10px;
+          }
+        }
+      }
+
+      &.card__button--play {
+        &::before {
+          content: "\e90b";
+          font-size: 24px;
+          margin-top: 3.5px;
+          margin-right: 0px;
+        }
+      }
+
+      &.card__button--market {
+        &::before {
+          content: "\e901";
+          font-size: 24px;
+          margin-top: 3.5px;
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+@import "./home/home";
+
+.main-content {
+  @media screen and (min-width: 1000px) {
+    grid-template-columns: auto auto auto;
+    grid-template-areas:
+      "title title title"
+      "highlight-video highlight-video recent-videos"
+      "section-videos section-videos section-videos"
+      "recent-products highlight-product highlight-product"
+      "section-shirts section-shirts section-shirts";
+    grid-column: 2;
+
+    .title {
+      grid-area: title;
+    }
+
+    .highlight-video {
+      grid-area: highlight-video;
+    }
+
+    .recent-videos {
+      grid-area: recent-videos;
+    }
+
+    .section-videos {
+      grid-area: section-videos;
+    }
+
+    .recent-products {
+      grid-area: recent-products;
+    }
+
+    .highlight-product {
+      grid-area: highlight-product;
+    }
+
+    .section-shirts {
+      grid-area: section-shirts;
+    }
+
+    padding: 30px 58px;
+  }
+
+  display: grid;
+  gap: 16px;
+
+  padding: 24px 16px;
+
+  h1 {
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  h2 {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #fff;
+  }
+}

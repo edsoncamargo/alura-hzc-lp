@@ -1,0 +1,139 @@
+.sidebar {
+  @media screen and (min-width: 1000px) {
+    width: 200px;
+
+    position: static;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+
+  width: 75vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  left: -75vw;
+
+  background-color: #15191c;
+  border-bottom-right-radius: 32px;
+
+  padding: 24px 28px;
+
+  box-sizing: border-box;
+
+  transition: all 0.3s ease-in-out;
+
+  &.sidebar--opened {
+    left: 0vw;
+  }
+
+  .sidebar__logotipo {
+    width: 114px;
+    height: 118px;
+
+    align-self: center;
+
+    display: block;
+
+    background-size: contain;
+    background-image: url(/assets/img/logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .sidebar__links {
+    display: flex;
+    flex-direction: column;
+
+    .sidebar__link {
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+
+      height: 64px;
+
+      font-size: 16px;
+      color: #95999c;
+
+      &::before {
+        content: "";
+
+        height: 100%;
+        width: 0px;
+
+        position: absolute;
+        top: 0px;
+        left: -28px;
+
+        background-color: #ffffff;
+
+        transition: width 0.4s ease-in-out;
+      }
+
+      &::after {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        min-width: 24px;
+        min-height: 24px;
+
+        margin-right: 18px;
+      }
+
+      &.sidebar__link--active {
+        position: relative;
+        color: #ffffff;
+
+        &::before {
+          width: 8px;
+        }
+      }
+
+      &.sidebar__link--start {
+        &::after {
+          content: "\e902";
+          font-size: 24px;
+        }
+      }
+
+      &.sidebar__link--videos {
+        &::after {
+          content: "\e90e";
+          font-size: 24px;
+        }
+      }
+
+      &.sidebar__link--peaks {
+        &::after {
+          content: "\e909";
+          font-size: 24px;
+        }
+      }
+
+      &.sidebar__link--members {
+        &::after {
+          content: "\e903";
+          font-size: 24px;
+        }
+      }
+
+      &.sidebar__link--shirts {
+        &::after {
+          content: "\e900";
+          font-size: 24px;
+        }
+      }
+
+      &.sidebar__link--pictures {
+        &::after {
+          content: "\e90a";
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
