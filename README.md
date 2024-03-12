@@ -1,103 +1,76 @@
-# Guia de estilos
+# HZC (exploring flex and grid with Alura)
 
-Toda a estilização que será usada no projeto dentro do figma.
+![HZC Logo](./assets/img/logo.jpg)
 
-[Link do projeto no figma](https://www.figma.com/file/ibWktwVpnog76rMYOdVhks/Dispondo-elementos-com-flexbox-e-grid?node-id=54%3A2358)
+**HZC** is the project, developed as part of the Alura course focused on improving skills in `display: flex` and `display: grid`. HZC is a fictitious store design aimed at demonstrating the practical application of these concepts in responsive and modern layouts.
 
-## Fonte
+## Credits
 
-```html
-Open Sans:
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
-```
+This project was developed based on the knowledge acquired through courses and educational materials provided by [alura](https://www.alura.com.br). Rockseat offers a wide range of high-quality courses and content for developers in various areas, including design, programming, and app development.
 
-## Cores
+We would like to thank the Rockseat team for providing valuable educational resources that contributed to the development of this project.
 
-corpo: `#1D232A`
+For more information about the courses and materials offered by Alura, please visit the official website at [alura](https://www.alura.com.br).
 
-cabeçalho: `#1D232A`
+🎨 [Figma do projeto](https://www.figma.com/file/ibWktwVpnog76rMYOdVhks/Dispondo-elementos-com-flexbox-e-grid?type=design&node-id=54-2358&mode=design&t=36V0HHLEhfWhx12u-0)
 
-cabeçalho mobile: `#15191C`
+## Objective
 
-menu lateral: `#15191C`
+The objective of this project is to practice and enhance the use of flexbox and grid layout to create flexible and dynamic user interfaces. Throughout the course, we explore advanced techniques for organizing elements on the page, adapting them for different devices and screen sizes.
 
-cartão: `#2C343A`
+## Features
 
-fonte: `#FFFFFF`
+- Responsive layout using flexbox and grid layout
+- Modern and intuitive design
+- Demonstration of best practices in organizing HTML, CSS code, and possible integrations with JavaScript for interactive functionalities.
 
-fonte alternativa: `#95999C`
+## Technology
 
-links: `#0480DC`
+The following are the key technologies and tools used in the development of this app:
 
-botão: `#0480DC`
+- **HTML/SCSS**: Used for structuring and styling the page.
+- **Grid**: Set the elements as a grid container.
+- **Flexbox**: Set the elements as a flexbox container.
+- **Icomoon**: A platform where you can create icon packs, and use icons as fonts.
 
-sombras: `0px 4px 4px rgba(0, 0, 0, 0.16)`
+## How to View HZC
 
-## Ícones
+To view this HZC locally, follow these steps:
 
-Estão dentro do arquivo de fonte `icones.ttf`. Para usar, primeiro importe a fonte no projeto usando `@font-face` e depois utilize os códigos abaixo para exibir o ícone.
+1. Clone the repository:
 
-```css
-@font-face {
-    font-family: 'icones';
-    src: url(../font/icones.ttf);
-}
-```
+   ```bash
+    git clone https://github.com/edsoncamargo/hzc-lp
+    cd your-path/hzc-lp
+   ```
 
-> Cuidado com a localização do arquivo `icones.ttf`
+2. Install Node.js: Sass is built with Node.js, so you need to install it first. You can download and install Node.js from the official website: Node.js.
 
-Camisas = `\e900`
+3. Install Sass globally via npm:
 
-Carrinho = `\e901`
+   ```bash
+    npm install -g sass
+   ```
 
-Inicio = `\e902`
+4. Compile scss in project root:
 
-Integrantes = `\e903`
+   ```bash
+    sass --watch ./assets/styles/scss/main.scss:./assets/styles/css/styles.css
+   ```
 
-Menu = `\e904`
+5. Install the Live Server extension in VS Code, and GO LIVE!
 
-Moeda = `\e905`
+## Contribution
 
-Notificação = `\e906`
+You are welcome to contribute to the development of this project. If you find bugs, wish to add new features, or improve usability, feel free to open an issue or submit a pull request.
 
-Pico = `\e908`
+## Contact
 
-Picos = `\e909`
+- Name: Edson Camargo Menezes
+- Email: contact@edsoncamargo.dev
 
-Pinturas = `\e90a`
+## Acknowledgments
 
-Play = `\e90b`
+Special thanks to everyone who contributed to making this app a reality, especially Alura for their invaluable support and guidance throughout the development process. Your expertise and dedication have been instrumental in bringing this project to fruition.
 
-Relogio = `\e90c`
-
-Seta-baixo = `\e90d`
-
-Videos = `\e90e`
-
-Visualizacao = `\e90f`
-
-## Espaçamentos
-
-Espaço interno botão: `8px`
-
-Espaço entre elementos do botão: `8px`
-
-Espaço entre elementos: `16px/8px`
-
-Espaçamento interno do corpo: `16px`
-
-Espaçamento entre o título do cartão de recentes e seus itens: `24px`
-
-## Tamanhos
-
-Tamanho do dispositivo mobile: `360px`
-
-Tamanho do dispositivo desktop: `1440px`
-
-Largura máxima do conteúdo principal: `1120px`
-
-Largura máxima de um cartão desktop: `256px`
-
-Altura mínima de um cartão: `320px`
+Enjoy using **HZC!**
