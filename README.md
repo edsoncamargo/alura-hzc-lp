@@ -40,8 +40,8 @@ To view this HZC locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-    git clone https://github.com/edsoncamargo/hzc-lp
-    cd your-path/hzc-lp
+    git clone https://github.com/edsoncamargo/alura-hzc-lp.git
+    cd your-path/alura-hzc-lp
    ```
 
 2. Install Node.js: Sass is built with Node.js, so you need to install it first. You can download and install Node.js from the official website: Node.js.
